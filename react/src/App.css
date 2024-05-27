@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+body{
+    background-color: rgb(249, 243, 236);
+}
+body * {
+    font-family: 'Mulish', sans-serif;
+}
+.main {
+    min-height: 100vh;
+}
+.notification{
+    padding: 20px;
+    font-weight: bold;
+    max-width: 90%;
+    width: 500px;
+    position:fixed;
+    bottom:20px;
+    right : 20px;
+    animation: animNotif 1s linear forwards;
+}
+@keyframes animNotif {
+    0% { transform: translateY(100%); opacity: 0;}
+    50% { transform: translateY(50%); opacity: 0.5;}
+    100% { transform: translateY(0%); opacity: 1;}
+}
+nav.navbar{
+    background-color:#eb5757 ;
+}
+a.nav-link, a.navbar-brand, .navbar-toggler-icon {
+    color : white;
+}
+nav a.navbar-brand{
+    font-size : 30px;
+    margin-left : 20px;
+}
+ul.navbar-nav{
+    margin-left : 20px;
+}
+a.nav-link{
+    border-radius: 5px;
+}
+a.nav-link:hover{
+    background-color: #222;
+    color: #eb5757;
+    border-radius: 5px;
+}
+header .actions{
+    margin-right : 20px;
+}
+#loginBtn, #signupBtn{
+    margin : 0 5px;
+    width: 100px;
+}
+#loginBtn{
+    background-color: #222;
+    color : white;
+    transition: opacity 300ms ease-in-out;
+}
+#signupBtn{
+    background-color: white;
+    color:#eb5757;
+    transition: opacity 300ms ease-in-out;
+}
+#loginBtn:hover, #signupBtn:hover{
+    opacity: 0.7;
+}
+header .actions {
+    height : 50px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: rgb(255, 255, 255, 0.8 ) solid 1px;
+    position: relative;
+}
+header .actions img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #222 2px solid;
+    margin-left : 5px;
+    position: absolute;
+    left: 5px;
+}
+header .actions p{
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    position: absolute;
+    left : 100px;
+
+}
+.header-section{
+    background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    height: 400px;
+    max-height: 70%;
+    position: relative;
+    animation: imgBgAnimation 1s ease-in forwards;
+}
+.header-section .hero-wrapper{
+    position: absolute;
+    bottom: 50px;
+}
+.hero-wrapper * {
+    color : white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+.hero-wrapper .hero-heading{
+    font-size: 40px;
+    max-width: 200px;
+}
+.hero-wrapper .hero-paragraphe{
+    margin-bottom: 30px;
+}
+.hero-button a{
+    border: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.hero-button a:hover{
+    color : black;
+    background-color: white;
+    text-shadow: none;
+}
+.article-list .article{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    border : rgb(243, 238, 238) solid 1px;
+    border-radius: 10px;
+    padding : 10px;
+}
+.article .article-heading{
+    font-weight: bold;
+    text-align: center;
+}
+.article .article-content{
+    padding: 10px 20px 0 20px;
+}
+.article .article-img{
+    display: flex;
+    justify-content: center;
+}
+.article-paragraphe{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    height: 120px;
+}
+.article-paragraphe p{
+    text-align: center;
+}
+.auth-container{
+    position: realtive;
+}
+.auth-card{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius : 10px;   
+    width: 400px;
+}
+.auth-card-head{
+    background-color: #222;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.auth-card form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.auth-card .input-container{
+    display: flex;
+    margin: 10px 0 0 0;
+    width: 80%;
+}
+.auth-card i.fa{
+    background-color: #eb5757;
+    padding: 10px;
+    color : white;
+    border-radius: 3px 0 0 3px;
+}
+.auth-card .input-container input{
+    border: rgb(0, 0, 0, 0.5) solid 1px;
+    border-radius : 0 3px 3px 0;
+    border-left : none;
+    width: 100%;
+}
+.auth-card a{
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color : #eb5757;
+    cursor: pointer;
+}
+.auth-card button{
+    border : none;
+    background-color : #eb5757;
+    color : white;
+    width: 80%;
+    margin: 10px 0;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.signup-container input{
+    margin: 5px 0;
+    width: 80%;
+}
+@keyframes imgBgAnimation {
+    0%{ opacity: 0;}
+    50%{ opacity: 0.5;}
+    100%{ opacity: 1;}
+}
+.feedback-container *{
+    color : white;
+}
+.feedback-container{
+    background-color: #222;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.feedback-container .feedback-header{
+    text-align: center;
+    margin-bottom: 30px;;
+}
+.feedback-header hr{
+    width: 50px;
+    margin: 0 auto;
+}
+.feedback-info, .feedback-conter{
+    margin: 15px 0;
+}
+.feedback-container img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: white solid 5px;
+}
+.feedback-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-username{
+    font-size : x-large;
+    margin-left: 10px;
+}
+footer {
+    background-color : #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+}
+footer a.btn{
+    border-radius: 50%;
+    width: 40px;
+    margin : 0 5px;
+}
+footer p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size :small;
+    position: absolute;
+    bottom: 5px;
+}
+.section-button{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.section-button button{
+    background-color: #eb5757;
+    font-size: 50px;
+    padding: 5px 40px;
+    border: none;
+    transform: skew(-10deg);
+    color: white;
+    text-transform: uppercase;
+    transition: transform 200ms linear,background-color 200ms linear,color 200ms linear;
+}
+.section-button button:hover{
+    background-color: #222;
+    color: #eb5757;
+    transform: skew(0deg);
+}
+.section-button button::after{
+    content: "\f054"; /* Unicode for Font Awesome chevron-right icon */
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 700;
+    margin-left:10px;
+}
+@media screen and (max-width: 570px){
+    ul.navbar-nav{
+        position:unset;
+    }
+    .article-list .article{
+        border : none;
+    }
+    .feedback-container img{
+        display: block;
+    }
+    .feedback-username{
+        margin: 0;
+    }
+    .section-button button{
+        font-size : 30px;
+    }
+    #loginBtn{
+        margin-left : 20px;
+    }
+    .auth-card{
+        width: 90%;
+    }
+}
